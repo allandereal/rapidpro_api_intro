@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>Groups</title>
+</head>
+<body>
+<h1>
+    Groups and Number of Contacts
+</h1>
+<table>
+    <thead><tr><td>Name</td><td>Count</td></tr></thead>
+    {% for group in groups %}
+        <tr><td>{{ group.name }}</td><td>{{ group.count }}</td></tr>
+    {% endfor %}
+</table>
+</body>
+</html>
