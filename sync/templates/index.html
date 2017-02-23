@@ -12,5 +12,12 @@
         <tr><td>{{ group.name }}</td><td>{{ group.count }}</td></tr>
     {% endfor %}
 </table>
+<hr>
+<table>
+    <thead><tr><td>Run Id</td><td>Time</td></tr></thead>
+    {% for run in runs %}
+        <tr><td>{{ run.id }}</td><td>{{ run.time }}</td></tr>
+    {% endfor %}
+</table>
 </body>
 </html>
